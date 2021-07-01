@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+      *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: content-box;
+      }
+      .container{
+        margin:30px 235px;
+      }
+      .img{
+        width: 100%;
+      }
+      .img img{
+        width: 100%;
+      }
+
+      .areaTop h2{
+        font-size: 48px;
+        font-family: 'Playfair Display', sans-serif;
+      }
+
+      .areaTop p{
+        font-size: 14.5px;
+        font-family: 'Montserrat',sans-serif;
+        margin: 12px 0px 30px 0px;
+      }
+      .areaIngredientes .ingredientes{
+        float: left;
+        width: 60%;
+        margin: 5px ;
+      }
+      .ingredientes .ingredienteItem{
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+      }
+
+      .ingredientes h2{
+        font-family: 'Playfair Display', serif;
+        color: #333333;
+        margin: 20px 0px 20px 0px;
+        font-size: 18px;
+      }
+
+      .ingredientes input{
+        margin-right: 17px;
+      }
+
+      .ingredientes p{
+        font-size: 16px;
+        font-family: 'Montserrat',sans-serif;
+      }
+      .IngredientesTitulo{
+        font-size: 24px;
+        font-family: 'Montserrat',sans-serif;
+        font-weight: bold;
+        color: #333333;
+
+      }
+      .areaIngredientes .infoPrato{
+        float: right;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, .1);
+        border-radius: 12px;
+        padding: 61px 43px 0px 43px;
+      }
+
+      .infoPrato>div{
+        display: flex;
+        align-items: center;
+        margin-bottom: 43px;
+      }
+
+      .infoPrato>div>div{
+        margin-left: 14px;
+        display: flex;
+        flex-direction: column;
+      }
+      .infoPrato>div>div p{
+        font-size: 10px;
+        color: #BDBDBD;
+      }
+      .infoPrato>div>div>div{
+        font-size: 14px;
+        margin-top: 4px;
+        font-family: 'Montserrat', sans-serif;
+        color: #333333;
+        font-weight: 500px;
+      }
+
+      .infoPrato .special{
+        color: orange;
+      }
+
+      .areaSteps{
+        padding: 10px 5px;
+        width: 60%;
+      }
+
+      .areaSteps h2{
+        font-size: 24px;
+        font-family: 'Playfair Display';
+        color: #333333;
+        font-weight: bold;
+        margin-bottom: 28px;
+      }
+
+      .steps{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 5px;
+      }
+      .stepNumber{
+        width: 36px;
+        height: 36px;
+        min-width: 36px;
+        max-width: 36px;
+        background: orange;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+        border-radius: 6px;
+      }
+
+      .steps p{
+        font-size: 16px;
+        margin-left: auto;
+        font-family: 'Montserrat', sans-serif;
+      }
+
+
+      @media(max-width: 850px){
+        .container{
+          margin: 30px 12px;
+        }
+
+        .areaIngredientes .ingredientes{
+          float: none;
+        }
+
+        .areaIngredientes .infoPrato{
+          float: none;
+          width: 95%;
+          display:flex;
+          padding: 0px;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content:space-around;
+        }
+        .areaIngredientes .infoPrato .especial{
+          width: 100%;
+          margin: 20px 0px 24px 30px;
+        }
+
+        .areaTop h2{
+          font-size: 24px;
+        }
+
+        .areaTop p{
+          font-size: 12px;
+          font-style: italic;
+          margin-left: 36px;
+        }
+
+        h2.IngredientesTitulo{
+          font-size: 18px;
+        }
+
+        .areaIngredientes .ingredientes {
+          width: 100%;
+        }
+        .areaIngredientes .ingredientes h2{
+          font-size: 16px;
+          font-style: italic;
+        }
+        .areaIngredientes .ingredienteItem p{
+          font-size: 14px;
+        }
+
+        .areaSteps{
+          width: 100%;
+        }
+        .areaSteps .steps{
+          margin-bottom: 25px;
+        }
+      }
